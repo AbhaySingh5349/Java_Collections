@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class Client {
+public class PredicateEvenClient {
 
     public static void checkEven(Collection<Integer> integerCollection, Predicate<Integer> predicate){
         integerCollection.forEach((num) -> {
