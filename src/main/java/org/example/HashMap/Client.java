@@ -17,5 +17,6 @@ public class Client {
         hmp.put(p3, true);
 
         System.out.println(hmp.size());
+        System.out.println(p1.equals(p2));
     }
 }

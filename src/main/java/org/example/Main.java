@@ -1,5 +1,9 @@
 package org.example;
 
+import java.util.Arrays;
+import java.util.OptionalInt;
+import java.util.stream.IntStream;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -13,5 +17,13 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
+
+        int[] arr = {1, 2, 3, 4, 5};
+        Arrays.stream(arr).forEach(value -> System.out.println(value));
+
+        int max = Arrays.stream(arr).max().orElseThrow();
+        System.out.println("max: " + max);
+
+        System.out.println((double) 3/2);
     }
 }
